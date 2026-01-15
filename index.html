@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipo Vargas Foix - 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        header p {
+            font-size: 1.3rem;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+
+        .team-photo {
+            width: 100%;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .team-photo img {
+            width: 100%;
+            max-width: 1200px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            padding: 60px 40px;
+            background: #fafbfc;
+        }
+
+        .team-member {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .team-member:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .team-member h3 {
+            font-size: 1.5rem;
+            color: #667eea;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .team-member .role {
+            font-size: 1rem;
+            color: #764ba2;
+            font-weight: 600;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .team-member .description {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.7;
+        }
+
+        footer {
+            background: #2d3748;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            .team-grid {
+                grid-template-columns: 1fr;
+                padding: 30px 20px;
+            }
+
+            .team-photo {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Equipo Vargas Foix</h1>
+            <p>Innovación, Estrategia y Ejecución - 2026</p>
+        </header>
+
+        <div class="team-photo">
+            <img src="team-photo.jpg" alt="Equipo Vargas Foix 2026">
+        </div>
+
+        <div class="team-grid">
+            <div class="team-member">
+                <h3>Sofía Van Der Schraft</h3>
+                <div class="role">Marketing e Innovación</div>
+                <div class="description">
+                    Directora de estrategia creativa y posicionamiento de marca. Experta en transformar ideas en movimientos de mercado disruptivos. Lidera el laboratorio de innovación donde se diseñan productos y servicios que desafían el status quo, aplicando frameworks de océano azul, marketing 6.0 y psicología del consumidor.
+                </div>
+            </div>
+
+            <div class="team-member">
+                <h3>Agustín Aubert</h3>
+                <div class="role">BenchMark & Market Research</div>
+                <div class="description">
+                    Investigador estratégico especializado en análisis competitivo profundo. Descubre gaps de mercado, analiza reviews de usuarios, identifica riesgos percibidos en soluciones existentes y valida oportunidades de diferenciación antes de que el equipo invierta recursos en desarrollo.
+                </div>
+            </div>
+
+            <div class="team-member">
+                <h3>Mateo Leorat</h3>
+                <div class="role">PRD Técnico</div>
+                <div class="description">
+                    Traductor de visión a especificación técnica. Convierte conceptos de negocio en Product Requirement Documents optimizados para Google AI Studio Vibe Coding. Define MVP scope, prioriza features, valida viabilidad técnica y asegura que cada requerimiento sea accionable para desarrollo con IA.
+                </div>
+            </div>
+
+            <div class="team-member">
+                <h3>Lucas Díaz Moreno</h3>
+                <div class="role">Vibe Coder</div>
+                <div class="description">
+                    Desarrollador especialista en construcción rápida de aplicaciones usando Google AI Studio y Gemini. Transforma PRDs en apps funcionales mediante prompting avanzado y vibe coding. Experto en crear prototipos y MVPs en tiempo récord, iterando rápidamente hasta lograr productos production-ready.
+                </div>
+            </div>
+
+            <div class="team-member">
+                <h3>Gerardo Van Der Schraft</h3>
+                <div class="role">Growth Hacking</div>
+                <div class="description">
+                    Arquitecto de crecimiento orgánico y viralidad sistémica. Diseña growth loops, mecánicas virales y estrategias product-led para escalar productos sin dependencia de publicidad paga. Experto en K-factor optimization, community-first tactics y sistemas de referral que transforman cada usuario en un canal de adquisición.
+                </div>
+            </div>
+
+            <div class="team-member">
+                <h3>Paula Velasco</h3>
+                <div class="role">Scaling Up</div>
+                <div class="description">
+                    Especialista en escalamiento técnico y operacional. Guía la transición de MVP a producción: deployment en Cloud Run, integración con bases de datos, configuración de dominios, monetización con Stripe, analytics y optimización de infraestructura para soportar crecimiento exponencial sin comprometer performance.
+                </div>
+            </div>
+
+            <div class="team-member">
+                <h3>Andrea Alcaráz</h3>
+                <div class="role">Compliance & Legal</div>
+                <div class="description">
+                    Abogada especialista en protección legal de productos digitales. Asegura compliance con regulaciones locales e internacionales (GDPR, CCPA, LGPD). Redacta Terms of Service, Privacy Policies y documentación legal ANTES de que se escriba código, evitando costosas rebuilds por requisitos legales tardíos.
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Equipo Vargas Foix | Construyendo el futuro, un emprendimiento a la vez</p>
+            <p style="margin-top: 10px;">
+                <a href="https://github.com/juanvargasfoix/miequipo" target="_blank">Ver en GitHub</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
